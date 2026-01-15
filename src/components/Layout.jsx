@@ -12,38 +12,24 @@ const Layout = ({ children }) => {
   ];
 
   return (
-    <div className="layout" style={{ display: 'flex', minHeight: '100vh', maxWidth: '1200px', margin: '0 auto' }}>
+    <div className="layout-container">
       {/* Sidebar */}
-      <header style={{
-        width: '250px',
-        padding: '3rem 2rem',
-        flexShrink: 0,
-        position: 'sticky',
-        top: 0,
-        height: '100vh',
-        alignSelf: 'flex-start',
-        borderRight: '1px solid var(--border-color)',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between'
-      }}>
+      <header className="sidebar">
         <div>
-          <div className="logo" style={{ marginBottom: '3rem', fontWeight: 600, fontSize: '1.2rem', letterSpacing: '-0.02em' }}>
+          <div className="logo">
             <Link to="/">Vivek Dave</Link>
           </div>
 
           <nav>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <ul className="nav-list">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
+                    className="nav-link"
                     style={{
                       color: location.pathname === item.path ? 'var(--text-primary)' : 'var(--text-secondary)',
-                      fontSize: '1rem',
                       fontWeight: location.pathname === item.path ? 500 : 400,
-                      fontStyle: 'italic',
-                      display: 'block'
                     }}
                   >
                     {item.label}
@@ -54,8 +40,8 @@ const Layout = ({ children }) => {
           </nav>
         </div>
 
-        <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
+        <div className="footer">
+          <div className="social-links">
             <a href="https://www.linkedin.com/in/vivek-dave-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://x.com/Viv_Dave_" target="_blank" rel="noopener noreferrer">Twitter</a>
           </div>
@@ -64,7 +50,7 @@ const Layout = ({ children }) => {
       </header>
 
       {/* Main Content */}
-      <main className="container" style={{ flex: 1, padding: '4rem 5rem', maxWidth: '900px' }}>
+      <main className="main-content">
         {children}
       </main>
     </div>
