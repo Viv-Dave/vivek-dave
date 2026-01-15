@@ -3,17 +3,12 @@ import React from 'react';
 const Research = () => {
     const papers = [
         {
-            title: "Efficient Attention Mechanisms in Vision Transformers",
-            venue: "CVPR 2025",
-            description: "Proposing a sparse attention mechanism to reduce computational complexity in ViTs without sacrificing accuracy.",
-            link: "#"
-        },
-        {
-            title: "Adversarial Robustness in Large Language Models",
-            venue: "NeurIPS 2024",
-            description: "Analyzing the vulnerability of LLMs to prompt injection attacks and proposing a defense framework.",
+            title: "Work in Progress :-D",
+            venue: "TBA",
+            description: "",
             link: "#"
         }
+
     ];
 
     return (

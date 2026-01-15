@@ -3,23 +3,11 @@ import React from 'react';
 const Blogs = () => {
     const posts = [
         {
-            title: "Understanding Backpropagation: A Visual Guide",
+            title: "The use of bias and its role in driving down the loss of a Neural Network",
             date: "Jan 12, 2025",
-            description: "A deep dive into the calculus behind neural network training.",
-            link: "#"
+            description: "A deep dive into the role of bias in neural networks.",
+            link: "https://www.notion.so/The-use-of-bias-and-its-role-in-driving-down-the-loss-of-a-Neural-Network-1e64ec07e06280e395b8f31689c89396"
         },
-        {
-            title: "The State of AGI in 2025",
-            date: "Dec 20, 2024",
-            description: "Thoughts on current progress and future directions in artificial general intelligence.",
-            link: "#"
-        },
-        {
-            title: "Why I Switched from TensorFlow to PyTorch",
-            date: "Nov 05, 2024",
-            description: "My personal journey and reasons for prefering PyTorch's dynamic computational graph.",
-            link: "#"
-        }
     ];
 
     return (

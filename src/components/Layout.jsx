@@ -56,8 +56,8 @@ const Layout = ({ children }) => {
 
         <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1.5rem' }}>
-            <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.linkedin.com/in/vivek-dave-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/Viv_Dave_" target="_blank" rel="noopener noreferrer">Twitter</a>
           </div>
           <div style={{ opacity: 0.5 }}>© {new Date().getFullYear()}</div>
         </div>
