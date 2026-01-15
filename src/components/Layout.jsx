@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
                       color: location.pathname === item.path ? 'var(--text-primary)' : 'var(--text-secondary)',
                       fontSize: '1rem',
                       fontWeight: location.pathname === item.path ? 500 : 400,
+                      fontStyle: 'italic',
                       display: 'block'
                     }}
                   >
